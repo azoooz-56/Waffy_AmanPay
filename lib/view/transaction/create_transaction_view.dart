@@ -26,7 +26,7 @@ class CreateTransactionView extends HookConsumerWidget {
 
     void updateTotal(String value) {
       final price = double.tryParse(value) ?? 0.0;
-      totalValue.value = (price * 0.04) + price; // Example calculation for the total value
+      totalValue.value = (price * 0.04);
     }
 
     return Scaffold(
